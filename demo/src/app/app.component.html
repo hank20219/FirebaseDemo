@@ -1,0 +1,7 @@
+<div style="margin: 8px 0">
+  <input #input type="text" [formControl]="inputText" />
+  <button (click)="submit()">送出</button>
+</div>
+<div>
+  <div *ngFor="let item of items$ | async">{{ item }}</div>
+</div>
